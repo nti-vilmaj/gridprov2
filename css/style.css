@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+}
+
+#grid{
+    display:grid;
+    height:100vh;
+    width: 100vw;
+    grid-template-columns:repeat(6*1fr);
+    grid-template-rows: repeat(7*1fr);
+    grid-template-areas:
+    'he he he he he he'
+    'a1 a1 a2 a2 a3 a3'
+    'a1 a1 a2 a2 a3 a3'
+    'a1 a1 a2 a2 a3 a3'
+    'a4 a4 a4 a4 a4 a4'
+    'a4 a4 a4 a4 a4 a4'
+    'a4 a4 a4 a4 a4 a4'
+    'fo fo fo fo fo fo';
+    background-color: whitesmoke;
+}
+
+.header{
+    grid-area: he;
+    background-color: aqua;
+}
+
+.article1{
+    grid-area: a1;
+    background-color: cadetblue;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.article2{
+    grid-area: a2;
+    background-color: dodgerblue;
+    margin: 10px;
+    margin-top: 0px;
+}
+
+.article3{
+    grid-area: a3;
+    background-color: cornflowerblue;
+    margin: 10px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+.article4{
+    grid-area: a4;
+    background-color: darkslateblue;
+    margin: 4px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.footer{
+    grid-area: fo;
+    background-color: deepskyblue;
+}
